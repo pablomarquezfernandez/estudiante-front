@@ -1,0 +1,12 @@
+<app-replicausuario [usuario]="usuario" ></app-replicausuario>
+<form (ngSubmit)="actualizarUsuario( $event )">
+    Nombres<br/>
+    <input type = 'text' name = 'nombres' [(ngModel)] = "usuario.nombres" /><br/>
+    Apellidos<br/>
+    <input type = 'text' name = 'apellidos'  [(ngModel)] = "usuario.apellidos" /><br/>
+    Correo<br/>
+    <input type = 'text' name = 'correo'  [(ngModel)] = "usuario.correo" /><br/>
+
+    <input type = 'submit'/><br/>
+   
+</form>
